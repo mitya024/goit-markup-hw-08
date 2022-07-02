@@ -1,6 +1,32 @@
+.regular-clients {
+  padding: 60px 0;
+  @include desktop {
+    padding: 94px 0;
+  }
+}
+.regular-customers-tittle {
+  @include fonts(700, 28px, 1.18, 0.03em);
+  text-align: center;
+  margin-bottom: 30px;
+  @include desktop {
+    margin-bottom: 50px;
+    @include fonts(null, 36px, 1.16, null);
+  }
+}
 .regular-customers {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.customers-list {
+  justify-content: center;
+  width: ((100%-30px) / 2);
+  @include tablet {
+    width: ((100%-60px) / 3);
+  }
+  @include desktop {
+    width: ((100%-150px) / 6);
+  }
 }
 .customers-list-link {
   display: flex;
@@ -24,12 +50,9 @@
   fill: var(--icons-main);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.regular-customers-tittle {
-  margin-top: 0px;
-  margin-bottom: 50px;
-  text-align: center;
-  @include fonts(700, 36px, 1.16, 0.03em);
-}
-.regular-clients {
-  padding: 94px 0px;
-}
+// .regular-customers-tittle {
+//   margin-top: 0px;
+//   margin-bottom: 50px;
+//   text-align: center;
+//   @include fonts(700, 36px, 1.16, 0.03em);
+// }

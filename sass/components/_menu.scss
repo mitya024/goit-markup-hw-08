@@ -1,0 +1,10 @@
+.menu-btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  &__iteam:not(:last-child) {
+    margin-right: 8px;
+  }
+}

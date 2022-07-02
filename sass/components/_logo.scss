@@ -1,0 +1,21 @@
+.logo {
+  display: block;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  @include fonts(700, 26px, 1.19, 0.03em);
+  & > span {
+    color: var(--main-focus-text-blue);
+  }
+  &__header {
+    @extend .logo;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    color: var(--main-text-color);
+    margin-right: 93px;
+  }
+  &__footer {
+    @extend .logo;
+    color: var(--main-white-color);
+    margin-bottom: 20px;
+  }
+}

@@ -1041,13 +1041,17 @@ body {
 .samples {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  gap: 30px;
 }
-.samples__iteam:not(:nth-child(3n+3)) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .samples__iteam {
+    width: calc((100% - 30px) / 2);
+  }
 }
-.samples__iteam:not(:nth-last-child(-n+3)) {
-  margin-bottom: 30px;
+@media screen and (min-width: 1200px) {
+  .samples__iteam {
+    width: calc((100% - 60px) / 3);
+  }
 }
 .samples__link {
   display: inline-block;
@@ -1100,19 +1104,32 @@ body {
 }
 
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .menu-btn {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-  margin-right: auto;
-  margin-left: auto;
+  flex-wrap: wrap;
+  gap: 15px 8px;
+  margin-bottom: 40px;
 }
-.menu-btn__iteam:not(:last-child) {
-  margin-right: 8px;
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .menu-btn {
+    margin-bottom: 50px;
+  }
 }
 
 @media screen and (min-width: 1200px) {

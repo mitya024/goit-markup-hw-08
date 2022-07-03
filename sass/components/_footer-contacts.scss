@@ -1,12 +1,14 @@
 .footer-contacts--margin {
-  margin-left: 70px;
+  margin-bottom: 60px;
+  @include desktop {
+    margin-left: 70px;
+    margin-bottom: 0;
+  }
 }
 .footer-contacts__text--margin {
   margin-bottom: 20px;
 }
-.footer-contacts__item--margin:not(:last-child) {
-  margin-right: 10px;
-}
+
 .footer-contacts {
   &__text {
     font-family: "Roboto";
@@ -14,9 +16,14 @@
     @include fonts(null, 14px, 1.14, 0.03em);
     text-transform: uppercase;
     color: #ffffff;
+    @include desktop {
+      text-align: left;
+    }
   }
   &__list {
     display: flex;
+    justify-content: center;
+    gap: 10px;
   }
   &__item {
     border-radius: 50%;

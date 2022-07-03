@@ -22,6 +22,9 @@
     color: var(--main-focus-text-blue);
   }
 }
-.adress__iteam:not(:last-child) {
-  margin-bottom: 9px;
+.adress {
+  margin: -8px;
+}
+.adress__iteam {
+  margin: 8px;
 }

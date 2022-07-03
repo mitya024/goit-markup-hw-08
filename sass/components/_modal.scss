@@ -10,8 +10,16 @@
   }
 }
 .modal {
-  width: 528px;
-  height: 581px;
+  width: 90%;
+  height: auto;
+  @include mobile {
+    width: 450px;
+    height: 609px;
+  }
+  @include desktop {
+    width: 528px;
+    height: 581px;
+  }
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -117,9 +125,12 @@
 }
 
 .terms-tittle {
-  @include fonts(null, 14px, 1.7, 0.03em);
+  @include fonts(400, 12px, 1.16, 0.03em);
+  @include desktop {
+    @include fonts(null, 14px, 1.7, 0.03em);
+  }
   color: var(--color-contact);
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   &::before {

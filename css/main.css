@@ -269,6 +269,7 @@ body {
 
 .mob-menu-socials {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .mob-menu-socials__item:not(:last-child) {

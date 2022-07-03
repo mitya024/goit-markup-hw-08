@@ -1,6 +1,10 @@
 .navigation {
-  display: flex;
-  align-items: center;
+  display: none;
+  @include tablet {
+    display: flex;
+    align-items: center;
+    margin-left: 88px;
+  }
   &__link,
   &__link.current {
     display: block;
@@ -14,7 +18,12 @@
     background-color: var(--main-focus-text-blue);
     border-radius: 2px;
     left: 0;
-    bottom: -32px;
+    @include tablet {
+      bottom: -28px;
+    }
+    @include desktop {
+      bottom: -32px;
+    }
   }
   &__iteam:not(:last-child) {
     margin-right: 50px;

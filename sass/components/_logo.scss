@@ -8,10 +8,12 @@
   }
   &__header {
     @extend .logo;
-    padding-top: 24px;
-    padding-bottom: 25px;
     color: var(--main-text-color);
-    margin-right: 93px;
+    @include tablet {
+    }
+    @include desktop {
+      margin-right: 93px;
+    }
   }
   &__footer {
     @extend .logo;

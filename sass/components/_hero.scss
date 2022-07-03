@@ -1,8 +1,15 @@
 .hero-tittle {
-  width: 360px;
+  width: auto;
   @include fonts(900, 26px, 1.6, 0.06em);
   text-transform: uppercase;
   color: var(--main-white-color);
   text-align: center;
   margin-bottom: 30px;
+  @include mobile {
+    width: 360px;
+  }
+  @include desktop {
+    @include fonts(900, 44px, 1.36, 0.06em);
+    width: 700px;
+  }
 }

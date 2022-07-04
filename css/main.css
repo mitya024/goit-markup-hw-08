@@ -93,6 +93,8 @@ body {
   .bg-main {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-main.jpg);
     max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -160,11 +162,13 @@ body {
   }
 }
 
+.header {
+  border-bottom: 1px solid rgb(236, 236, 236);
+}
 .header > .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid rgb(236, 236, 236);
   padding-top: 16px;
   padding-bottom: 16px;
 }
@@ -792,6 +796,7 @@ body {
 @media screen and (min-width: 1200px) {
   .customers-list {
     width: calc((100% - 150px) / 6);
+    height: auto;
   }
 }
 
@@ -799,6 +804,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);

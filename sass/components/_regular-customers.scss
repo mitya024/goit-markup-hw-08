@@ -25,12 +25,14 @@
   }
   @include desktop {
     width: calc((100% - 150px) / 6);
+    height: auto;
   }
 }
 .customers-list-link {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -47,9 +49,3 @@
   fill: var(--icons-main);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-// .regular-customers-tittle {
-//   margin-top: 0px;
-//   margin-bottom: 50px;
-//   text-align: center;
-//   @include fonts(700, 36px, 1.16, 0.03em);
-// }
